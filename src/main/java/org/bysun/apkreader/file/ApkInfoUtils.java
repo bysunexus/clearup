@@ -66,7 +66,5 @@ public class ApkInfoUtils {
 			} catch (IOException e) {}
 		}
 		return info;
-	}
-	
-	
+	}	
 }
