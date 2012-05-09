@@ -8,7 +8,7 @@ import java.io.InputStreamReader;
 
 import org.bysun.apkreader.model.ApkInfoDto;
 public class ApkInfoUtils {
-	private final static String BASE_PATH = ApkInfoUtils.class.getResource("").getFile()+"aapt.exe dump badging ";
+	private final static String BASE_PATH = ApkInfoUtils.class.getClassLoader().getResource("").getFile()+"aapt.exe dump badging ";
 	private final static String RP_REGEX = "package: name='(.*?)' versionCode='(.*?)' versionName='(.*?)'";
 	
 	public static ApkInfoDto readApkInfo(File apk){
