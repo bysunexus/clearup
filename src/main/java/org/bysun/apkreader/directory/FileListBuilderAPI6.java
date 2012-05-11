@@ -46,11 +46,11 @@ public class FileListBuilderAPI6 implements IFileListBuilder {
 		this.basePath = new File(basePathStr);
 		this.filter = new NameFilter(extNames);
 		validBasePath();
+		readFileList(basePath);
 	}
 
 	@Override
-	public List<File> listFile() {
-		readFileList(basePath);
+	public List<File> listFile() {		
 		return fileList;
 	}
 

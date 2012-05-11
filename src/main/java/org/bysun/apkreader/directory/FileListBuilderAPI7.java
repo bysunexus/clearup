@@ -52,20 +52,20 @@ public class FileListBuilderAPI7 implements IFileListBuilder {
 //		this.path = Paths.get(path);
 //		this.filter = filter;
 //		validBasePath();
-//	}
-//	
-//	
-//
-//	@Override
-//	public List<File> listFile() {
 //		try {
 //			DirectoryStream<Path> stream = Files.newDirectoryStream(path, filter);
 //			for (Path path : stream) {
 //				fileList.add(path.toFile());
 //			}
 //		} catch (IOException e) {
-//			
+//	
 //		}
+//	}
+//	
+//	
+//
+//	@Override
+//	public List<File> listFile() {
 //		return fileList;
 //	}
 //
